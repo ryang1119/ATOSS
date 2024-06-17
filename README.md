@@ -2,8 +2,6 @@
 
 ## Quick Start
 
-First, transfer the data folder into the ATOSS folder.
-
 Follow the steps below ⬇️
 
 ### Set Up
