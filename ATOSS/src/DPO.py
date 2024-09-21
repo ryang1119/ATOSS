@@ -52,7 +52,7 @@ def init_args():
     parser.add_argument("--base_model", default='mvp', type=str,
                         help="The name of the base model, selected from: [para, mvp]")
     parser.add_argument("--domain", default='rest', type=str, help="The name of the domain, selected from: [rest, laptop]")
-    parser.add_argument("--lowercase", action='store_true', help="Whether to convert all inputs to lowercase")
+    parser.add_argument("--lowercase", default=True, type=bool, help="Whether to lowercase the input text")
 
     # wandb parameters
     args = parser.parse_args()
