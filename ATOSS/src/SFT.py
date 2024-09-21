@@ -55,7 +55,7 @@ def init_args():
     parser.add_argument("--save_top_k", default=1, type=int, help="Number of top models to save")
     parser.add_argument("--check_val_every_n_epoch", default=1, type=int, help="Validation checks per number of epochs")
     parser.add_argument("--load_path_cache", action='store_true', help="Whether to load path cache")
-    parser.add_argument("--lowercase", action='store_true', help="Whether to convert all inputs to lowercase")
+    parser.add_argument("--lowercase", default=True, type=bool, help="Whether to lowercase the input text")
 
     args = parser.parse_args()
 
@@ -193,7 +193,7 @@ class T5FineTuner(pl.LightningModule):
         print("load training data.")
         train_dataset = ABSADataset(tokenizer=self.tokenizer,
                             task_name=self.config.task,
-                            data_type=self.config.train,
+                            data_type='train',
                             args=self.config,
                             max_len=self.config.max_seq_length)
         dataloader = DataLoader(
@@ -208,7 +208,7 @@ class T5FineTuner(pl.LightningModule):
     def val_dataloader(self):
         val_dataset = ABSADataset(tokenizer=self.tokenizer,
                             task_name=self.config.task,
-                            data_type=self.config.train,
+                            data_type='dev',
                             args=self.config,
                             max_len=self.config.max_seq_length)
         return DataLoader(val_dataset,
@@ -227,7 +227,7 @@ tokenizer = T5Tokenizer.from_pretrained(args.model_name_or_path)
 print(f"Here is an example (from the dev set):")
 dataset = ABSADataset(tokenizer=tokenizer,
                     task_name=args.task,
-                    data_type=args.train,
+                    data_type='dev',
                     args=args,
                     max_len=args.max_seq_length)
 
