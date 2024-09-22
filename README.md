@@ -33,4 +33,4 @@ sh run_dpo.sh
 
 ### After inference of SFT and DPO is completed..
 
-you can inference sft_test.txt and dpo_test.txt to the baseline model such as paraphrase, DLO & ILO and mvp.
+you can inference sft_test.txt and dpo_test.txt to the baseline models such as paraphrase, DLO & ILO and mvp.
