@@ -44,14 +44,10 @@ sh run_dpo.sh
 Once the inference steps for SFT and DPO are completed, you can evaluate the results using baseline models:
 
 - **Fine-tuned models**
-  - Paraphrase 
-  - DLO & ILO
-  - MVP
+  - Paraphrase, DLO & ILO and MVP
 
 - **Prompting-based LLMs**
-  - Paraphrase 
-  - DLO & ILO
-  - MVP
+  - GPT-3.5, GPT-4 and GPT-4o
 
 Evaluation files:
 - `sft_test.txt` (for SFT results)  
