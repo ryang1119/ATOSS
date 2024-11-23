@@ -1,4 +1,4 @@
-# ATOSS: Aspect Term-Oriented Sentence Splitter
+# **ATOSS: Aspect Term-Oriented Sentence Splitter**
 
 Repo for **📄 [ATOSS](https://arxiv.org/abs/2410.02297)** paper (EMNLP 2024 Findings) 
 
@@ -43,9 +43,15 @@ sh run_dpo.sh
 
 Once the inference steps for SFT and DPO are completed, you can evaluate the results using baseline models:
 
-- **Paraphrase**  
-- **DLO & ILO**  
-- **MVP**
+- **Fine-tuned models**
+  - Paraphrase 
+  - DLO & ILO
+  - MVP
+
+- **Prompting-based LLMs**
+  - Paraphrase 
+  - DLO & ILO
+  - MVP
 
 Evaluation files:
 - `sft_test.txt` (for SFT results)  
