@@ -1,6 +1,8 @@
 # **ATOSS: Aspect Term-Oriented Sentence Splitter**
 
-Repo for paper **📄 [Make Compound Sentences Simple to Analyze: Learning to Split Sentences for Aspect-based Sentiment Analysis](https://arxiv.org/abs/2410.02297)** (EMNLP 2024 Findings) 
+Repo for paper 
+
+**📄 [Make Compound Sentences Simple to Analyze: Learning to Split Sentences for Aspect-based Sentiment Analysis](https://arxiv.org/abs/2410.02297)** (EMNLP 2024 Findings) 
 
 ## Quick Start
 
