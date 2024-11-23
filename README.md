@@ -1,6 +1,6 @@
-# **ATOSS: Aspect Term-Oriented Sentence Splitter
+# ATOSS: Aspect Term-Oriented Sentence Splitter
 
-Repo for EMNLP 2024 Findings paper **📄 [Read the Paper: ATOSS](https://arxiv.org/abs/2410.02297)**  
+Repo for **📄 [ATOSS](https://arxiv.org/abs/2410.02297)** paper (EMNLP 2024 Findings) 
 
 ## Quick Start
 
@@ -50,23 +50,6 @@ Once the inference steps for SFT and DPO are completed, you can evaluate the res
 Evaluation files:
 - `sft_test.txt` (for SFT results)  
 - `dpo_test.txt` (for DPO results)
-
----
-
-### **4. Directory Structure**
-
-Here’s an overview of the key directories in this project:
-
-```
-ATOSS/
-├── src/
-│   ├── run_sft.sh      # Script to run SFT
-│   ├── run_dpo.sh      # Script to run DPO
-│   └── ...             # Additional source files
-├── requirements.txt     # Python dependencies
-├── README.md            # Project documentation
-└── ...
-```
 
 ---
 
